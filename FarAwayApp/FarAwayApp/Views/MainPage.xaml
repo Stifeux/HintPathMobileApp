@@ -3,37 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FarAwayApp.Views.MainPage"
              BackgroundImage="@drawable/test">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="transparent" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
             <Button Text="Document"
-                    BackgroundColor="#ff00ff"
+                    FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="0"
                     Grid.Column="0"/>
 
             <Button Text="ID"
-                    BackgroundColor="#ff000f"
+                    FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="3"
                     Grid.Column="2"/>
 
             <Button Text="Enigme"
-                    BackgroundColor="#ff00ff"
+                    FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="0"
                     Grid.Column="2"/>
 
             <Button Text="Map"
-                    BackgroundColor="#ff000f"
+                    FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="2"
                     Grid.Column="0"/>
         </Grid>
