@@ -25,22 +25,26 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Text="Document"
+            <Button Text="Documents"
+                    Clicked="NavToDocument"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="0"
                     Grid.Column="0"/>
 
             <Button Text="ID"
+                    Clicked="NavToID"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="3"
                     Grid.Column="2"/>
 
-            <Button Text="Enigme"
+            <Button Text="Quêtes"
+                    Clicked="NavToQuest"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="0"
                     Grid.Column="2"/>
 
             <Button Text="Map"
+                    Clicked="NavToMap"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="2"
                     Grid.Column="0"/>

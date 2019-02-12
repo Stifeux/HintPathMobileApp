@@ -40,7 +40,7 @@ namespace FarAwayApp.Views
         
             var getData = await getDataFromService();
 
-            DisplayAlert("Item Tapped", getData[0].Mail.ToString(), "OK");
+            DisplayAlert("Item Tapped", getData[0].email.ToString(), "OK");
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
@@ -50,7 +50,7 @@ namespace FarAwayApp.Views
         {
             using (var client = new HttpClient())
             {
-                var responseText = await client.GetStringAsync("http://10.5.2.155:3000/Users");
+                var responseText = await client.GetStringAsync("http://10.166.210.168:3000/users");
                 dynamic data = JsonConvert.DeserializeObject(responseText);
                 return data;
             }

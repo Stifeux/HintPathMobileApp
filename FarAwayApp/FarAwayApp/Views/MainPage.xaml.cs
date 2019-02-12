@@ -16,5 +16,25 @@ namespace FarAwayApp.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void NavToQuest(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new QuestPage();
+        }
+
+        private void NavToID(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new QuestPage();
+        }
+
+        private void NavToDocument(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new QuestPage();
+        }
+
+        private void NavToMap(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new QuestPage();
+        }
+    }
 }
