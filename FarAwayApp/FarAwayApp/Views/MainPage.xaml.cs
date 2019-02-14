@@ -17,24 +17,12 @@ namespace FarAwayApp.Views
 			InitializeComponent ();
 		}
 
-        private void NavToQuest(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new QuestPage();
-        }
+        private async void NavToQuestAsync(object sender, EventArgs e) => await Navigation.PushModalAsync(new QuestPage());
 
-        private void NavToID(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new QuestPage();
-        }
+        private async void NavToIDAsync(object sender, EventArgs e) => await Navigation.PushModalAsync(new QuestPage());
 
-        private void NavToDocument(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new QuestPage();
-        }
+        private async void NavToDocumentAsync(object sender, EventArgs e) => await Navigation.PushModalAsync(new QuestPage());
 
-        private void NavToMap(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new QuestPage();
-        }
+        private async void NavToMapAsync(object sender, EventArgs e) => await Navigation.PushModalAsync(new QuestPage());
     }
 }

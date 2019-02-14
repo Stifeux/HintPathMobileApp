@@ -26,25 +26,25 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="Documents"
-                    Clicked="NavToDocument"
+                    Clicked="NavToDocumentAsync"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="0"
                     Grid.Column="0"/>
 
             <Button Text="ID"
-                    Clicked="NavToID"
+                    Clicked="NavToIDAsync"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="3"
                     Grid.Column="2"/>
 
             <Button Text="Quêtes"
-                    Clicked="NavToQuest"
+                    Clicked="NavToQuestAsync"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="0"
                     Grid.Column="2"/>
 
             <Button Text="Map"
-                    Clicked="NavToMap"
+                    Clicked="NavToMapAsync"
                     FontFamily ="Spaceport.otf#Spaceport 2006"
                     Grid.Row="2"
                     Grid.Column="0"/>
